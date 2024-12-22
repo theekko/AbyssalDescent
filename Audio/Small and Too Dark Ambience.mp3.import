@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brusjaj40ptmn"
+path="res://.godot/imported/Small and Too Dark Ambience.mp3-ff13c16b4a9b59897ff873f2154540c3.mp3str"
+
+[deps]
+
+source_file="res://Audio/Small and Too Dark Ambience.mp3"
+dest_files=["res://.godot/imported/Small and Too Dark Ambience.mp3-ff13c16b4a9b59897ff873f2154540c3.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

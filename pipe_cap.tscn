@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2nwsqxrsic3d"]
+
+[ext_resource type="PackedScene" uid="uid://cdld5yuk7kfyo" path="res://PipeCap.glb" id="1_luhb3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bhuqk"]
+points = PackedVector3Array(0.369838, -0.968018, -0.786468, 0.0375385, 0.978326, 0.978326, -0.0533889, 0.969175, 0.969175, 0.0375385, 0.978326, -0.978326, -0.840701, -0.968895, 0.514607, 0.866, -0.981719, 0.490667, 0.866, 0.981719, -0.490667, -0.840701, 0.968895, -0.514607, -0.840701, -0.968895, -0.514607, 0.0375385, -0.978326, 0.978326, 0.866, 0.981719, 0.490667, -0.840701, 0.968895, 0.514607, 0.866, -0.981719, -0.490667, -0.0533889, -0.969175, -0.969175, -0.0533889, 0.969175, -0.969175, -0.0533889, -0.969175, 0.969175, 0.0375385, -0.978326, -0.978326, 0.832202, 0.978134, 0.519514, 0.832202, 0.978134, -0.519514, 0.832202, -0.978134, 0.519514, 0.832202, -0.978134, -0.519514)
+
+[node name="PipeCap" instance=ExtResource("1_luhb3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(0.615644, 0, 1.06633, 0, 0.190061, 0, -1.06633, 0, 0.615644, 0, 1.17582, 0)
+shape = SubResource("ConvexPolygonShape3D_bhuqk")

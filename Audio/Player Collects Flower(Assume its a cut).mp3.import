@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpratdc8av8sm"
+path="res://.godot/imported/Player Collects Flower(Assume its a cut).mp3-fa8453d4e4c55b64bcd4209cf96b4173.mp3str"
+
+[deps]
+
+source_file="res://Audio/Player Collects Flower(Assume its a cut).mp3"
+dest_files=["res://.godot/imported/Player Collects Flower(Assume its a cut).mp3-fa8453d4e4c55b64bcd4209cf96b4173.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

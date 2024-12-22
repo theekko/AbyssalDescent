@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0yr3bbojt8dh"]
+
+[ext_resource type="PackedScene" uid="uid://dlbd1m0y5mnua" path="res://GoblinFish.glb" id="1_nbku5"]
+
+[node name="GoblinFish" instance=ExtResource("1_nbku5")]
+
+[node name="Sphere" parent="Armature/Skeleton3D" index="0"]
+transform = Transform3D(0.0532863, 0.0133232, 0.023992, 0.0264742, -0.0387568, -0.037277, 0.00722751, 0.0437374, -0.0403406, 0.239806, 2.20768, -0.0821522)
+
+[node name="Sphere_002" parent="Armature/Skeleton3D" index="1"]
+transform = Transform3D(0.0532863, 0.0133232, 0.023992, 0.0264743, -0.0387568, -0.037277, 0.00722751, 0.0437373, -0.0403406, -0.239806, 2.20768, -0.0821519)
+
+[node name="Plane_005" parent="Armature/Skeleton3D" index="2"]
+transform = Transform3D(-0.0796534, -0.114657, -2.9859e-08, 9.31323e-08, -1.02445e-07, 0.13961, -0.114657, 0.0796534, 8.56817e-08, 0.324009, 1.02065, 0.366301)
+
+[node name="Plane_001" parent="Armature/Skeleton3D" index="3"]
+transform = Transform3D(-0.0796535, -0.114657, 6.2141e-09, 1.49012e-08, -1.49012e-08, 0.13961, -0.114657, 0.0796533, -5.96046e-08, -0.324009, 1.02065, 0.366301)
+
+[node name="TopFin" parent="Armature/Skeleton3D" index="4"]
+transform = Transform3D(1.67697e-08, 0.223059, -1.03585e-09, -5.21541e-08, -1.00633e-08, 0.223059, 0.223059, -1.09402e-08, -8.9407e-08, -3.90799e-14, 1.19621, -0.363868)
+
+[node name="Plane_004" parent="Armature/Skeleton3D" index="5"]
+transform = Transform3D(5.50009e-08, -0.0942336, -9.95452e-09, -3.72529e-09, -1.42923e-08, 0.0942337, -0.0942337, -4.26006e-08, -1.11759e-08, -1.86536e-14, -1.71505, 0.171422)
+
+[node name="TopFinRear" parent="Armature/Skeleton3D" index="6"]
+transform = Transform3D(2.4363e-08, 0.120685, 1.59418e-08, -2.23517e-08, -1.33205e-08, 0.120685, 0.120685, -2.22541e-08, 1.86265e-08, -1.12565e-13, -1.22006, -0.258443)
+
+[node name="Plane_006" parent="Armature/Skeleton3D" index="7"]
+transform = Transform3D(-0.0744288, -0.107136, -7.05768e-09, -2.42144e-08, 7.45058e-09, 0.130453, -0.107136, 0.0744288, -7.45058e-09, 0.231367, -0.389713, 0.300404)
+
+[node name="Plane_002" parent="Armature/Skeleton3D" index="8"]
+transform = Transform3D(-0.0744288, -0.107136, -2.09475e-08, -5.58794e-09, -2.04891e-08, 0.130453, -0.107136, 0.0744288, 3.72529e-09, -0.231367, -0.389713, 0.300404)

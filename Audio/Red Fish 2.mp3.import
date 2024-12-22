@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://j42ggm00va8h"
+path="res://.godot/imported/Red Fish 2.mp3-b6aea067b7e833411e5eb62e0ff711d0.mp3str"
+
+[deps]
+
+source_file="res://Audio/Red Fish 2.mp3"
+dest_files=["res://.godot/imported/Red Fish 2.mp3-b6aea067b7e833411e5eb62e0ff711d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

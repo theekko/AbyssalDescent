@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://h8p3g00a54ug"]
+
+[ext_resource type="PackedScene" uid="uid://dvfefm030iou2" path="res://ValveLookMaNoHands.glb" id="1_2mby1"]
+
+[node name="ValveLookMaNoHands" instance=ExtResource("1_2mby1")]
+
+[node name="Valve" parent="Armature_001/Skeleton3D" index="0"]
+transform = Transform3D(1.83064, -1.49723e-23, 2.76419e-07, 2.76419e-07, 6.04167e-16, -1.83064, -4.2309e-22, 0.32994, 3.35216e-15, 2.07619e-07, 1.38535, 3.44231)

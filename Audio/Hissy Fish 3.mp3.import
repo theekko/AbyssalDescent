@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b24gq3qqsa7gw"
+path="res://.godot/imported/Hissy Fish 3.mp3-1f443531fdcd032e2cc08852d5052857.mp3str"
+
+[deps]
+
+source_file="res://Audio/Hissy Fish 3.mp3"
+dest_files=["res://.godot/imported/Hissy Fish 3.mp3-1f443531fdcd032e2cc08852d5052857.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

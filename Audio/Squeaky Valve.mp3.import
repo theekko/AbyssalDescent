@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://daud2us4gxpbu"
+path="res://.godot/imported/Squeaky Valve.mp3-fe84e17c92c6e68946403c9130dcba02.mp3str"
+
+[deps]
+
+source_file="res://Audio/Squeaky Valve.mp3"
+dest_files=["res://.godot/imported/Squeaky Valve.mp3-fe84e17c92c6e68946403c9130dcba02.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
