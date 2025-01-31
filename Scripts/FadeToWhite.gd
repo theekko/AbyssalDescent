@@ -8,17 +8,17 @@ signal transition_complete
 
 func _ready() -> void:
 	color_rect.visible = false
-	add_child(wait_timer)  # Add the timer to the scene
-	wait_timer.one_shot = true  # Make sure the timer only triggers once
-	wait_timer.timeout.connect(_on_wait_timer_timeout)  # Connect the timeout signal
+	add_child(wait_timer)  
+	wait_timer.one_shot = true  
+	wait_timer.timeout.connect(_on_wait_timer_timeout) 
 	animation_player.animation_finished.connect(_on_animation_finished)
 	
 func _on_animation_finished(anim_name):
 	print("play reverse")
 	if anim_name == "FadeToBlack":
-		wait_timer.start(2.0)  # Wait for 2 seconds before transitioning back
+		wait_timer.start(2.0) 
 	elif anim_name == "FadeToGame":
-		color_rect.visible = false  # Hide the canvas after the animation
+		color_rect.visible = false 
 		emit_signal("transition_complete")
 
 func _on_wait_timer_timeout():

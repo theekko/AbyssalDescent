@@ -1,11 +1,11 @@
 extends OmniLight3D
 
-@export var camera: Camera3D  # Reference to the camera
-@export var player: CharacterBody3D  # Reference to the player
-@export var max_light_range = 30.0  # Maximum brightness at the center
-@export var min_light_range = 5.0  # Minimum brightness at the edges
-@export var max_distance = 100.0  # Distance at which the light starts dimming
-@export var min_distance_factor = 0.3  # 50% of max distance
+@export var camera: Camera3D 
+@export var player: CharacterBody3D  
+@export var max_light_range = 30.0 
+@export var min_light_range = 5.0  
+@export var max_distance = 100.0  
+@export var min_distance_factor = 0.3  
 @export var threshold = 80.0
 @export var above_threshold_range_value = 50.0
 

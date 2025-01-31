@@ -5,14 +5,14 @@ extends RigidBody3D
 @export var rotate_speed = 1.0  # Speed of rotation
 
 # Waypoint inputs
-@export var waypoints: Array[Node3D] = []  # List of waypoints
+@export var waypoints: Array[Node3D] = []  
 @export var angle_threshold = 0.99
 
 # Player interactions
 @export var player: CharacterBody3D
 @export var camera: Camera3D
-@export var follow_threshold: float = 30.0  # Start following when player is within this range
-@export var stop_follow_threshold: float = 25.0  # Stop following when player is farther than this
+@export var follow_threshold: float = 30.0 
+@export var stop_follow_threshold: float = 25.0
 
 @export var open_mouth_distance: float = 20.0
 @export var bite_distance: float = 10.0
@@ -34,7 +34,7 @@ var target_rotation: Basis
 var is_moving: bool = false
 var ray_cast: RayCast3D
 var open_mouth_playing = false
-var is_following_player = false  # State variable to track if the fish is following the player
+var is_following_player = false 
 
 
 # Called when the node enters the scene tree for the first time.
@@ -52,7 +52,7 @@ func _on_animation_finished(anim_name: String) -> void:
 	if anim_name == "OpenMouth":
 		animation_player.seek(animation_player.current_animation_length, true)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta: float) -> void:
 	var distance_to_player = global_transform.origin.distance_to(player.global_transform.origin)
 	
@@ -61,7 +61,7 @@ func _process(delta: float) -> void:
 			# Stop following the player if they move beyond the stop threshold
 			if distance_to_player > stop_follow_threshold or player.holding_flower:
 				is_following_player = false
-				is_rotating = true  # Return to moving toward waypoints
+				is_rotating = true 
 				set_target_rotation()
 			else:
 				follow_player(delta)
@@ -115,13 +115,13 @@ func rotate_towards_waypoint(delta: float) -> void:
 	global_transform.basis = current_rotation.slerp(target_rotation, rotate_speed * delta)
 
 	# Check if the rotation is close enough to the target (using dot product)
-	var current_forward: Vector3 = current_rotation.z.normalized()  # Forward direction of the current rotation
-	var target_forward: Vector3 = target_rotation.z.normalized()  # Forward direction of the target rotation
+	var current_forward: Vector3 = current_rotation.z.normalized()  
+	var target_forward: Vector3 = target_rotation.z.normalized()  
 	
-	# If the dot product is close to 1, consider the rotation finished
-	if current_forward.dot(target_forward) > angle_threshold:  # Threshold for "close enough"
+
+	if current_forward.dot(target_forward) > angle_threshold:  
 		is_rotating = false
-		is_moving = true  # Start moving after rotation is complete
+		is_moving = true  
 
 # Move towards the current waypoint
 func move_towards_waypoint(delta: float) -> void:

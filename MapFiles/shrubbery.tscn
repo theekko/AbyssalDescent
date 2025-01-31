@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://di42u8vy668y4"]
+
+[ext_resource type="PackedScene" uid="uid://s5fs3os162eh" path="res://MapFiles/Shrubbery.glb" id="1_e01pp"]
+
+[node name="Shrubbery" instance=ExtResource("1_e01pp")]

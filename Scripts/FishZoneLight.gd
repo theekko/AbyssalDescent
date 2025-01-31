@@ -3,8 +3,8 @@ extends OmniLight3D
 @export var player: CharacterBody3D
 @export var volumetric_fog_energy = 15.0
 @export var base_light_energy = 5.0
-@export var min_light_energy = 0.0  # Minimum energy the light can reach when player is close
-@export var max_distance = 20.0 # Distance at which light energy will be at its base value
+@export var min_light_energy = 0.0  
+@export var max_distance = 20.0 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

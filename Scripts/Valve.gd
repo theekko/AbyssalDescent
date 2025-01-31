@@ -10,7 +10,7 @@ signal valve_turned
 @onready var animation_player = $AnimationPlayer
 var valve_turn = false
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	interaction_area.body_entered.connect(_on_body_entered)
 	interaction_area.body_exited.connect(_on_body_exited)
@@ -31,7 +31,6 @@ func turn_valve():
 		animation_player.play("TurnValve") 
 		squeek.play()
 		valve_turn = true
-				# Start the timer to stop the audio after a specific time
 		var timer = Timer.new()
 		timer.wait_time = 5.1
 		timer.one_shot = true
@@ -39,9 +38,9 @@ func turn_valve():
 		add_child(timer)
 		timer.start()
 
-# This function is called when the timer times out
+
 func _on_stop_squeek() -> void:
-	squeek.stop()  # Stop the audio after the set duration
+	squeek.stop() 
 
 func _on_animation_finished(anim_name):
 	if anim_name == "TurnValve":
@@ -52,6 +51,6 @@ func _on_animation_finished(anim_name):
 		material.emission = Color(0.39, 0.89, 0, 1)
 		light_bulb.mesh.surface_set_material(0, material)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta: float) -> void:
 	pass

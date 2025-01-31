@@ -79,7 +79,7 @@ func _ready():
 	interaction_area.body_entered.connect(_on_body_entered)
 
 func _on_transition_complete():
-	call_deferred("capture_mouse")  # Capture mouse after transition ends
+	call_deferred("capture_mouse")
 
 
 func _unhandled_input(event):
@@ -224,7 +224,6 @@ func capture_mouse():
 	
 
 
-# Function to handle the interaction with the flower
 func _spawn_flower() -> void:
 	if not holding_flower:
 		digging.play()
@@ -252,8 +251,8 @@ func _on_ray_hit() -> void:
 
 		# Check if the hit object is on the "Flowers" layer
 		if collision_layer & layer_map["Flowers"]:
-			emit_signal("flower_detected")  # Emit the signal when a flower is detected
-			print("Flower detected in range")  # Optional debug message
+			emit_signal("flower_detected") 
+			print("Flower detected in range") 
 		if collision_layer & layer_map["UnknownHorror"]:
-			emit_signal("unknown_horror_detected")  # Emit the signal when a flower is detected
-			print("Unkonwn Horror detected in range")  # Optional debug message
+			emit_signal("unknown_horror_detected")  
+			print("Unkonwn Horror detected in range") 
